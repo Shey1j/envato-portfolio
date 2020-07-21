@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: #232433;
+}
+
+a.nav-link:hover {
+  color: #e07a5f !important;
+}
+
+a.nav-link:focus {
+  color: #e07a5f !important;
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+h2 {
+  font-size: 36px;
+  line-height: 44px;
+  color: #e07a5f;
+}
+
+p {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.jumbotron {
+  background-color: #dedadb;
+}
+
+button {
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.education h4 {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+p.progress-level {
+  font-size: 14px;
+}
+
+.underlay {
+  left: 40px;
+  margin-top: 14px;
+  z-index: -1;
+  position: absolute;
+  width: 247px;
+  height: 87px;
+  background: #e07a5f;
+  border-top-left-radius: 10px !important;
+}
+
+.overlay {
+    margin-top: -90px;
+    right: 8px;
+  z-index: -1;
+  position: absolute;
+  width: 320px;
+  height: 100px;
+  background: #e07a5f;
+  border-radius: 0px 0px 10px 0px;
+}
+
+
+.image {
+  position: absolute;
+  bottom: -30px;
+  right: 20px;
+}
+
+.card.animated {
+  animation-duration: 2.5s;
+}
+
+@media (min-width: 768px) {
+  p {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  h4,
+  h2 {
+    font-size: 36px;
+    line-height: 52px;
+  }
+
+  button {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .education h4 {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  p.progress-level {
+    font-size: 18px;
+  }
+
+  img.certificate-badge {
+    width: 24px;
+    height: 32px;
+  }
+
+  img.research-icon {
+    width: 30px;
+    height: 43.64px;
+  }
+
+  p.footer-text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: 992px) {
+  a.navbar-brand {
+    font-size: 36px;
+  }
+
+  a.navbar-brand img {
+    width: 30px;
+    height: 30px;
+  }
+
+  p {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  h5.research {
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  p.info {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  p.experience-info {
+    color: #3d405b;
+  }
+
+  p.research-text,
+  p.experience-info,
+  p.footer-text.contact-name {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  p.about-info,
+  p.card-text {
+    font-size: 16px;
+    line-height: 32px;
+  }
+
+  p.about-info {
+    padding-left: 4rem !important;
+    padding-right: 4rem !important;
+  }
+
+  p.experience-date,
+  p.skill-name,
+  p.experience-name {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .progress,
+  .progress-bar {
+    height: 9px !important;
+  }
+
+  h4 {
+    font-size: 48px;
+    line-height: 59px;
+  }
+
+  h4.contact-page,
+  h4.work-page,
+  h4.experience-page,
+  h4.skill-page,
+  h4.about-page {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  button {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  p.footer-text {
+    font-size: 12px;
+    line-height: 24px;
+  }
+
+  p.contact-name i.phone {
+    font-size: 25px;
+  }
+
+  i.twitter,
+  i.facebook {
+    font-size: 26px;
+  }
+}
