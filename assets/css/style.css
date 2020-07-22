@@ -267,7 +267,7 @@ p.progress-level {
   }
 
   .overlay, .overlay2 {
-      top: 90px;
+      top: 100px;
       width: 280px;
       height: 280px;
   }
@@ -323,7 +323,7 @@ p.progress-level {
     }
 
     .overlay2 {
-        right: 5px;
+        right: 4px;
     }
 }
 
