@@ -315,5 +315,6 @@ p.progress-level {
 
       .overlay, .overlay2 {
         top: 90px;
+        overflow-y: hidden;
     }
 }
