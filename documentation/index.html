@@ -282,6 +282,18 @@
           <pre class="prettyprint lang-html linenums">
 &lt;!-- Custom JS --&gt;
 &lt;script src=&quot;./assets/js/custom.js&quot;&gt;&lt;/script&gt;
+&lt;!-- JQuery JS --&gt;
+&lt;script src=&quot;https://code.jquery.com/jquery-3.2.1.slim.min.js&quot; 
+        integrity=&quot;sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN&quot; 
+        crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+&lt;!-- Popper JS --&gt;
+&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js&quot; 
+        integrity=&quot;sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q&quot; 
+        crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+&lt;!-- Bootstrap JS --&gt;
+&lt;script src=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js&quot; 
+        integrity=&quot;sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl&quot; 
+        crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
 </pre
           >
         </div>
@@ -323,7 +335,7 @@
           <div>
             <pre class="prettyprint lang-css linenums">
 :root {
-  --header-font: 'Montserrat, serif;
+  --header-font: 'Montserrat', serif;
   --text-font: 'Montserrat', sans-serif;
   --nav-font: 'Montserrat', sans-serif;
   --primary-color: #4070ff;
@@ -380,7 +392,7 @@
           <hr class="notop" />
         </div>
         <div>
-          Slick slider is the slider you will find in the content. It's an essay
+          Bootstrap 4 Carousel is the slider you will find in the content. It's an essay
           to use lighweight carousel with some decent features.
         </div>
         <div>
@@ -389,97 +401,79 @@
         <div>
           <div>
             <div>
-              Estate Section slider has class &#39;sliders&#39; and each slide
-              has &#39;&lt;div class=&quot;slider-item&quot;&gt;&#39; wrapper
+              Portfolio Section slider has class &#39;carousel slide&#39; and each slide
+              has &#39;&lt;div class=&quot;carousel-item&quot;&gt;&#39; wrapper
               for easy find where slide html code start. If you wont remove some
               slide just remove div with all content like this &#39;&lt;div
-              class=&quot;item&quot;&gt;&#39;
+              class=&quot;carousel-item&quot;&gt;&#39;
             </div>
             <div>
               &nbsp;
             </div>
           </div>
           <pre class="prettyprint lang-html linenums">
-&lt;!-- Sliders --&gt;
-&lt;div class=&quot;sliders&quot;&gt;
-    &lt;div class=&quot;row home-sliders&quot;&gt;
-      &lt;div class=&quot;col-md-4 slider-item&quot;&gt;
-          &lt;img src=&quot;./assets/images/sliders/house.png&quot; alt=&quot;Exclusive Apartment&quot; class=&quot;img-fluid slider-img&quot; &gt;
-          &lt;div class=&quot;slider-desc p-2 px-3&quot;&gt;
-            &lt;p class=&quot;slider-name m-0&quot;&gt;Exclusive Apartment&quot;/p&gt;
-            &lt;a href=&quot;#&quot; class=&quot;slider-link&quot;&gt;Explore &gt;&quot;/a&gt;
-          &lt;/div&gt;          
-      &lt;/div&gt;
+&lt;!-- Carousel --&gt;
+&lt;div class=&quot;carousel slide&quot; data-ride=&quot;carousel&quot; id=&quot;modal&quot;&gt;
+  &lt;ol class=&quot;carousel-indicators&quot;&gt;
+    &lt;li
+      data-target=&quot;#modal&quot;
+      data-slide-to=&quot;0&quot;
+      class=&quot;active&quot;
+    &gt;&lt;/li&gt;
+    &lt;li data-target=&quot;#modal&quot; data-slide-to=&quot;1&quot;&gt;&lt;/li&gt;
+    &lt;li data-target=&quot;#modal&quot; data-slide-to=&quot;2&quot;&gt;&lt;/li&gt;
+    &lt;li data-target=&quot;#modal&quot; data-slide-to=&quot;3&quot;&gt;&lt;/li&gt;
+    &lt;li data-target=&quot;#modal&quot; data-slide-to=&quot;4&quot;&gt;&lt;/li&gt;
+    &lt;li data-target=&quot;#modal&quot; data-slide-to=&quot;5&quot;&gt;&lt;/li&gt;
+  &lt;/ol&gt;
 
-      &lt;div class=&quot;col-md-4 slider-item&quot;&gt;
-            ...
-      &lt;/div&gt;
-
-      &lt;div class=&quot;col-md-4 slider-item&quot;&gt;
-            ...
-      &lt;/div&gt;
+  &lt;div class=&quot;carousel-inner&quot;&gt;
+    &lt;div class=&quot;carousel-item active&quot;&gt;
+      ...
     &lt;/div&gt;
-&lt;/section&gt;
-&lt;!-- /.Testimonial --&gt;</pre
+    &lt;div class=&quot;carousel-item&quot;&gt;
+      ...
+    &lt;/div&gt;
+    &lt;div class=&quot;carousel-item&quot;&gt;
+      ...
+    &lt;/div&gt;
+    &lt;div class=&quot;carousel-item&quot;&gt;
+      ...
+    &lt;/div&gt;
+    &lt;div class=&quot;carousel-item&quot;&gt;
+      ...
+    &lt;/div&gt;
+    &lt;div class=&quot;carousel-item&quot;&gt;
+      ...
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;a
+    class=&quot;carousel-control-prev&quot;
+    href=&quot;#modal&quot;
+    role=&quot;button&quot;
+    data-slide=&quot;prev&quot;
+  &gt;
+    &lt;span
+      class=&quot;carousel-control-prev-icon&quot;
+      aria-hidden=&quot;true&quot;
+    &gt;&lt;/span&gt;
+    &lt;span class=&quot;sr-only&quot;&gt;Previous&lt;/span&gt;
+  &lt;/a&gt;
+  &lt;a
+    class=&quot;carousel-control-next&quot;
+    href=&quot;#modal&quot;
+    role=&quot;button&quot;
+    data-slide=&quot;next&quot;
+  &gt;
+  &lt;span
+  class=&quot;carousel-control-next-icon&quot;
+  aria-hidden=&quot;true&quot;
+&gt;&lt;/span&gt;
+&lt;span class=&quot;sr-only&quot;&gt;Next&lt;/span&gt;
+&lt;/a&gt;
+&lt;/div&gt;</pre
           >
-          <div>
-            &nbsp;
-          </div>
-          <div>
-            If you want change option for sliders you need to open
-            assets/js/custom.js and find &#39;// Our Sliders Start&#39; function
-            and set true/false for option what you wont to change
-          </div>
-          <div>
-            &nbsp;
-          </div>
-          <div>
-            &nbsp;
-          </div>
-          <pre class="prettyprint lang-js linenums">
-// Slick Slider Configuration
-$(document).ready(function () {
-  // Homepage Sliders
-  $('.home-sliders').slick({
-    autoplaySpeed: 2000,
-    slidesToShow: 3,
-    dots: true,
-    prevArrow: $('.prev-btn'),
-    nextArrow: $('.next-btn'),
-  })
-
-  $('.residence-sliders').slick({
-    autoplaySpeed: 2000,
-    slidesToShow: 4,
-    dots: true,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          arrows: true,
-          slidesToShow: 3,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slideToScroll: 1,
-        },
-      },
-    ],
-  })
-})
-</pre
-          >
-        </div>
-        <p>
-          You can find more documentation here&nbsp;<a
-            href="https://kenwheeler.github.io/slick/"
-            target="_blank"
-            >https://kenwheeler.github.io/slick/</a
-          >
-        </p>
+         
       </section>
       <section id="google_map">
         <div class="page-header">
@@ -559,27 +553,9 @@ $(document).ready(function () {
         </div>
 
         <div>
-          <strong>Slick Slider</strong>&nbsp;2 -
-          <a href="https://kenwheeler.github.io/slick/" target="_blank"
-            >https://kenwheeler.github.io/slick/</a
-          >
-        </div>
-        <div>
-          <strong>animate.css</strong> -&nbsp;<a
-            href="http://daneden.me/animate"
-            >http://daneden.me/animate</a
-          >
-        </div>
-        <div>
-          <strong>wow.js</strong> -&nbsp;<a
-            href="http://mynameismatthieu.com/WOW/"
-            >http://mynameismatthieu.com/WOW</a
-          >/
-        </div>
-        <div>
-          <strong>jquery.sticky.js</strong> -&nbsp;<a
-            href="http://stickyjs.com/"
-            >http://stickyjs.com/</a
+          <strong>aos.css</strong> -&nbsp;<a
+            href="https://michalsnik.github.io/aos/"
+            >https://michalsnik.github.io/aos/</a
           >
         </div>
         <div>
