@@ -13,14 +13,6 @@ a {
   color: #232433;
 }
 
-a.nav-link:hover {
-  color: #e07a5f !important;
-}
-
-a.nav-link.active {
-  color: #e07a5f !important;
-}
-
 h4 {
   font-weight: 700;
   font-size: 18px;
@@ -39,15 +31,26 @@ p {
   line-height: 15px;
 }
 
-.jumbotron {
-  background-color: #dedadb;
-}
-
 button {
   font-size: 12px;
   line-height: 15px;
 }
 
+/*----NAVBAR----*/
+a.nav-link:hover {
+  color: #e07a5f !important;
+}
+
+a.nav-link.active {
+  color: #e07a5f !important;
+}
+
+/*----HERO SECTION----*/
+.jumbotron {
+  background-color: #dedadb;
+}
+
+/*----SKILLS SECTION----*/
 .education h4 {
   font-size: 16px;
   line-height: 20px;
@@ -56,7 +59,7 @@ button {
 p.progress-level {
   font-size: 14px;
 }
-
+/*
 .underlay {
   left: 40px;
   margin-top: 14px;
@@ -69,8 +72,8 @@ p.progress-level {
 }
 
 .overlay {
-    margin-top: -90px;
-    right: 8px;
+  margin-top: -90px;
+  right: 8px;
   z-index: -1;
   position: absolute;
   width: 320px;
@@ -78,7 +81,6 @@ p.progress-level {
   background: #e07a5f;
   border-radius: 0px 0px 10px 0px;
 }
-
 
 .image {
   position: absolute;
@@ -88,7 +90,7 @@ p.progress-level {
 
 .card.animated {
   animation-duration: 2.5s;
-}
+}*/
 
 @media (min-width: 768px) {
   p {
@@ -107,6 +109,7 @@ p.progress-level {
     line-height: 18px;
   }
 
+  /*----SKILLS SECTION----*/
   .education h4 {
     font-size: 24px;
     line-height: 29px;
@@ -121,11 +124,19 @@ p.progress-level {
     height: 32px;
   }
 
+  /*----PORTFOLIO SECTION----*/
+  #portfolio .modal-content {
+    width: 500px;
+    height: 500px;
+  }
+
+  /*----RESEARCH SECTION----*/
   img.research-icon {
     width: 30px;
     height: 43.64px;
   }
 
+  /*----FOOTER SECTION----*/
   p.footer-text {
     font-size: 16px;
     line-height: 24px;
@@ -133,6 +144,22 @@ p.progress-level {
 }
 
 @media (min-width: 992px) {
+  p {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  h4 {
+    font-size: 48px;
+    line-height: 59px;
+  }
+  
+  button {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  /*----NAVBAR SECTION----*/
   a.navbar-brand {
     font-size: 36px;
   }
@@ -142,16 +169,13 @@ p.progress-level {
     height: 30px;
   }
 
-  p {
-    font-size: 24px;
-    line-height: 29px;
-  }
-
+  /*----RESEARCH SECTION----*/
   h5.research {
     font-size: 18px;
     line-height: 32px;
   }
 
+  /*----SKILLS SECTION----*/
   p.info {
     font-size: 18px;
     line-height: 22px;
@@ -161,6 +185,7 @@ p.progress-level {
     color: #3d405b;
   }
 
+  
   p.research-text,
   p.experience-info,
   p.footer-text.contact-name {
@@ -168,16 +193,6 @@ p.progress-level {
     line-height: 24px;
   }
 
-  p.about-info,
-  p.card-text {
-    font-size: 16px;
-    line-height: 32px;
-  }
-
-  p.about-info {
-    padding-left: 4rem !important;
-    padding-right: 4rem !important;
-  }
 
   p.experience-date,
   p.skill-name,
@@ -191,11 +206,25 @@ p.progress-level {
     height: 9px !important;
   }
 
-  h4 {
-    font-size: 48px;
-    line-height: 59px;
+  /*----ABOUT SECTION----*/
+  p.about-info,
+  p.card-text {
+    font-size: 16px;
+    line-height: 32px;
   }
 
+  p.about-info {
+    padding-left: 4rem !important;
+    padding-right: 4rem !important;
+  }
+
+  /*----PORTFOLIO SECTION----*/
+  #portfolio .modal-content {
+    width: 500px;
+    height: 500px;
+  }
+
+  /*----CONTACT, FOOTER. PORTFOLIO.SKILLS AND ABOUT SECTION----*/
   h4.contact-page,
   h4.work-page,
   h4.experience-page,
@@ -205,11 +234,7 @@ p.progress-level {
     line-height: 29px;
   }
 
-  button {
-    font-size: 18px;
-    line-height: 22px;
-  }
-
+  /*----FOOTER SECTION----*/
   p.footer-text {
     font-size: 12px;
     line-height: 24px;
