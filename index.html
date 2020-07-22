@@ -34,7 +34,7 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Design Portfolio</title>
   </head>
-  <body id="home">
+  <body>
     <nav
       class="navbar position-fixed sticky-top navbar-expand-lg py-0 px-md-5 w-100"
       style="background: #f9f8f8; z-index: 99;"
@@ -57,9 +57,9 @@
       </button>
       <div class="collapse navbar-collapse mr-lg-4" id="navDropdown">
         <ul class="navbar-nav ml-auto mr-5">
-          <li class="nav-item active">
+          <li class="nav-item">
             <a href="#home" class="nav-link mr-4" id="s1"
-              >Home<span class="sr-only">(current)</span></a
+              >Home</a
             >
           </li>
           <li class="nav-item">
@@ -79,7 +79,7 @@
     </nav>
 
     <!-- HERO SECTION -->
-    <div class="jumbotron jumbotron-fluid mb-0">
+    <div class="jumbotron jumbotron-fluid mb-0" id="home">
       <div
         class="container text-center text-md-left d-md-flex px-md-3 mx-lg-auto jumbotron-container"
       >
@@ -90,7 +90,7 @@
           style="background-color: #e07a5f; overflow-y: hidden;"
         />
 
-        <div class="col-12 col-md-6 px-md-0 my-md-auto">
+        <div class="col-12 col-md-6 px-md-0 my-md-auto pl-lg-4">
           <p class="font-weight-normal mt-2 mb-2">
             Hello, I'm Gabrielle Smith
           </p>
@@ -325,7 +325,7 @@
 
     <!--ABOUT SECTION OF THE PAGE-->
     <section
-      class="pt-5 text-center px-5"
+      class="py-5 text-center px-5"
       id="about"
       style="color: #232433; background: rgba(222, 218, 219, 0.2);"
     >
@@ -907,7 +907,7 @@
                 alt=""
                 class="w-100 h-100 float-right"
                 data-aos="fade-right"
-                data-aos-duration="2000"
+                data-aos-duration="1000"
               />
             </div>
           </div>
@@ -918,7 +918,7 @@
                 src="assets/images/Mask Group4.png"
                 alt=""
                 data-aos="fade-left"
-                data-aos-duration="2000"
+                data-aos-duration="1000"
                 class="w-100 h-100"
               />
             </div>
@@ -930,7 +930,7 @@
                 src="assets/images/Mask Group0.png"
                 alt=""
                 data-aos="fade-right"
-                data-aos-duration="3000"
+                data-aos-duration="1000"
                 class="float-right w-100"
               />
             </div>
@@ -942,7 +942,7 @@
                 src="assets/images/Mask Group4.png"
                 alt=""
                 data-aos="fade-left"
-                data-aos-duration="2000"
+                data-aos-duration="1000"
                 class="w-100 h-100"
               />
             </div>
@@ -954,7 +954,7 @@
                 src="assets/images/Mask Group.png"
                 class="w-100 h-100"
                 data-aos="fade-left"
-                data-aos-duration="3000"
+                data-aos-duration="1000"
                 alt=""
               />
             </div>
@@ -1159,8 +1159,6 @@
       </div>
     </footer>
 
-    <!-- Optional JavaScript -->
-    <script src="./assets/js/custom.js"></script>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
@@ -1183,5 +1181,8 @@
       AOS.init();
       window.addEventListener("load", AOS.refresh);
     </script>
+    <!-- Optional JavaScript -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.2/waypoints.js"></script>
+    <script src="./assets/js/custom.js"></script>
   </body>
 </html>
