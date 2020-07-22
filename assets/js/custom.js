@@ -1,101 +1,39 @@
-//Default active on home
-$("#s1").addClass("active");
-
-/*
-Smooth scrolling
-*/
-$("#s1").click(function () {
-  $("html, body").animate(
-    {
-      scrollTop: $("#home").offset().top - 65
-    },
-    1000
-  );
-  return false;
+$(document).ready(function () {
+    $(document).on("scroll", onScroll);
+    
+    //smoothscroll
+    $('a[href^="#"]').on('click', function (e) {
+        e.preventDefault();
+        $(document).off("scroll");
+        
+        $('a').each(function () {
+            $(this).removeClass('active');
+        })
+        $(this).addClass('active');
+      
+        var target = this.hash,
+            menu = target;
+        $target = $(target);
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top+2
+        }, 500, 'swing', function () {
+            window.location.hash = target;
+            $(document).on("scroll", onScroll);
+        });
+    });
 });
 
-$("#s2").click(function () {
-  $("html, body").animate(
-    {
-      scrollTop: $("#about").offset().top - 100
-    },
-    1000
-  );
-  return false;
-});
-
-$("#s3").click(function () {
-  $("html, body").animate(
-    {
-      scrollTop: $("#skills").offset().top - 100
-    },
-    1000
-  );
-  return false;
-});
-
-$("#s4").click(function () {
-  $(this).addClass("active");
-  $("html, body").animate(
-    {
-      scrollTop: $("#portfolio").offset().top - 100
-    },
-    1000
-  );
-  return false;
-});
-
-$("#s5").click(function () {
-    $(this).addClass("active");
-    $("html, body").animate(
-      {
-        scrollTop: $("#contact").offset().top - 100
-      },
-      1000
-    );
-    return false;
-  });
-
-/*
-Using jquery waypoints to change active on scroll
-*/
-$("#about").waypoint(
-  function () {
-    $(".navbar-collapse ul li").children().removeClass("active");
-    $("#s2").addClass("active");
-  },
-  { offset: 101 }
-);
-
-$("#skills").waypoint(
-  function () {
-    $(".navbar-collapse ul li").children().removeClass("active");
-    $("#s3").addClass("active");
-  },
-  { offset: 101 }
-);
-
-$("#portfolio").waypoint(
-  function () {
-    $(".navbar-collapse ul li").children().removeClass("active");
-    $("#s4").addClass("active");
-  },
-  { offset: 101 }
-);
-
-$("#contact").waypoint(
-    function () {
-      $(".navbar-collapse ul li").children().removeClass("active");
-      $("#s5").addClass("active");
-    },
-    { offset: 101 }
-  );
-
-$("#home").waypoint(
-  function () {
-    $(".navbar-collapse ul li").children().removeClass("active");
-    $("#s1").addClass("active");
-  },
-  { offset: 0 }
-);
-
+function onScroll(event){
+    var scrollPos = $(document).scrollTop();
+    $('#navDropdown a').each(function () {
+        var currLink = $(this);
+        var refElement = $(currLink.attr("href"));
+        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+            $('#navDropdown ul li a').removeClass("active");
+            currLink.addClass("active");
+        }
+        else{
+            currLink.removeClass("active");
+        }
+    });
+}
