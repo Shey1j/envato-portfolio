@@ -267,9 +267,13 @@ p.progress-level {
   }
 
   .overlay, .overlay2 {
-      top: 100px;
+      top: 80px;
       width: 280px;
       height: 280px;
+  }
+
+  .overlay2 {
+      top: 70px;
   }
 
   /*----CONTACT, FOOTER. PORTFOLIO.SKILLS AND ABOUT SECTION----*/
@@ -314,7 +318,7 @@ p.progress-level {
       }
 
       .overlay, .overlay2 {
-        top: 92px;
+        top: 90px;
         overflow-y: hidden;
     }
 
