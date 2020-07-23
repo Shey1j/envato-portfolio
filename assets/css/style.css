@@ -46,10 +46,6 @@ a.nav-link.active {
   color: #e07a5f !important;
 }
 
-/*----HERO SECTION----*/
-.jumbotron {
-  background-color: #dedadb;
-}
 
 /*----SKILLS SECTION----*/
 .education h4 {
@@ -166,6 +162,7 @@ p.progress-level {
     font-size: 18px;
     line-height: 22px;
   }
+  
 
   /*----NAVBAR SECTION----*/
   a.navbar-brand {
@@ -184,13 +181,13 @@ p.progress-level {
   }
 
   .box {
-    width: 280px;
-    height: 120px;
+    width:80%;
+    height: 50%;
   }
   
   .box2 {
-    width: 280px;
-    height: 120px;
+    width:80%;
+    height: 50%;
     top: 100px;
   }
 
