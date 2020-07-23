@@ -90,9 +90,9 @@ p.progress-level {
 .overlay {
     background: #e07a5f;
     border-radius: 0px 0px 0px 10px;
-    width: 180px;
-    height: 180px;
-    top:85px;
+    width: 80%;
+    height: 70%;
+    top:45%;
     left: 2px;
     z-index: 0;
 }
@@ -100,11 +100,18 @@ p.progress-level {
 .overlay2 {
     background: #e07a5f;
     border-radius: 0px 0px 10px 0px; 
-    width: 180px;
-    height: 180px;
+    width: 80%;
+    height: 70%;
+    top:45%;
     z-index: 0;
     right: 2px;
-    top: 85px;
+}
+
+@media (min-width: 390px) {
+    .overlay, .overlay2 {
+        height: 70%;
+        top: 30%;
+    }
 }
 
 /*----MEDIA QUERIES----*/
@@ -148,6 +155,8 @@ p.progress-level {
 
   .overlay, .overlay2 {
       top: 170px;
+      width: 180px;
+      height: 180px;
   }
   
 
