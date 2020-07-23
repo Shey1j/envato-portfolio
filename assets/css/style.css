@@ -65,13 +65,13 @@ p.progress-level {
     height: 192px;
 }
 .box {
-  width: 320px;
-  height: 120px;
+  width: 80%;
+  height: 50%;
 }
 
 .box2 {
-  width: 320px;
-  height: 120px;
+    width: 80%;
+    height: 50%;
   top: 100px;
 }
 
@@ -245,16 +245,6 @@ p.progress-level {
     height: 500px;
   }
 
-  .overlay, .overlay2 {
-      top: 35px;
-      width: 280px;
-      height: 280px;
-  }
-
-  .overlay2 {
-      top: 35px;
-  }
-
   /*----CONTACT, FOOTER. PORTFOLIO.SKILLS AND ABOUT SECTION----*/
   h4.contact-page,
   h4.work-page,
@@ -281,36 +271,9 @@ p.progress-level {
   }
 }
 
-@media (min-width: 1200px) {
-    .overlay, .overlay2 {
-        top: 95px;
-    }
-}
-
 @media (min-width: 1260px) {
-    .box {
-        width: 320px;
-        height: 120px;
-      }
-      
-      .box2 {
-        width: 320px;
-        height: 120px;
-        top: 100px;
-      }
+    
 
-      .overlay, .overlay2 {
-        top: 90px;
-        overflow-y: hidden !important;
-    }
-
-    .overlay {
-        left: 5px;
-    }
-
-    .overlay2 {
-        right: 4px;
-    }
 }
 
 
