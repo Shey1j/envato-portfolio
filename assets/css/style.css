@@ -92,7 +92,7 @@ p.progress-level {
     border-radius: 0px 0px 0px 10px;
     width: 80%;
     height: 70%;
-    top:45%;
+    top:30%;
     left: 2px;
     z-index: 0;
 }
@@ -102,16 +102,9 @@ p.progress-level {
     border-radius: 0px 0px 10px 0px; 
     width: 80%;
     height: 70%;
-    top:45%;
+    top:30%;
     z-index: 0;
     right: 2px;
-}
-
-@media (min-width: 390px) {
-    .overlay, .overlay2 {
-        height: 70%;
-        top: 30%;
-    }
 }
 
 /*----MEDIA QUERIES----*/
