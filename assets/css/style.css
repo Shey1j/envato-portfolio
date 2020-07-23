@@ -120,12 +120,6 @@ p.progress-level {
     width: 500px;
     height: 500px;
   }
-
-  .overlay, .overlay2 {
-      top: 170px;
-      width: 180px;
-      height: 180px;
-  }
   
 
   /*----RESEARCH SECTION----*/
@@ -171,17 +165,6 @@ p.progress-level {
   h5.research {
     font-size: 18px;
     line-height: 32px;
-  }
-
-  .box {
-    width:80%;
-    height: 50%;
-  }
-  
-  .box2 {
-    width:80%;
-    height: 50%;
-    top: 100px;
   }
 
   #home-card {
@@ -238,16 +221,6 @@ p.progress-level {
     height: 500px;
   }
 
-  .overlay, .overlay2 {
-      top: 35px;
-      width: 280px;
-      height: 280px;
-  }
-
-  .overlay2 {
-      top: 35px;
-  }
-
   /*----CONTACT, FOOTER. PORTFOLIO.SKILLS AND ABOUT SECTION----*/
   h4.contact-page,
   h4.work-page,
@@ -274,25 +247,5 @@ p.progress-level {
   }
 }
 
-@media (min-width: 1200px) {
-    .overlay, .overlay2 {
-        top: 95px;
-    }
-}
-
-@media (min-width: 1260px) {
-      .overlay, .overlay2 {
-        top: 90px;
-        overflow-y: hidden !important;
-    }
-
-    .overlay {
-        left: 5px;
-    }
-
-    .overlay2 {
-        right: 4px;
-    }
-}
 
 
