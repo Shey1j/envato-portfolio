@@ -68,16 +68,6 @@ p.progress-level {
 #home-card .card {
     height: 192px;
 }
-.box {
-  width: 320px;
-  height: 120px;
-}
-
-.box2 {
-  width: 320px;
-  height: 120px;
-  top: 100px;
-}
 
 /*----PORTFOLIO SECTION----*/
 .overlay {
@@ -291,17 +281,6 @@ p.progress-level {
 }
 
 @media (min-width: 1260px) {
-    .box {
-        width: 320px;
-        height: 120px;
-      }
-      
-      .box2 {
-        width: 320px;
-        height: 120px;
-        top: 100px;
-      }
-
       .overlay, .overlay2 {
         top: 90px;
         overflow-y: hidden !important;
