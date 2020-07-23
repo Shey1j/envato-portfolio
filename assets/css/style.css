@@ -149,6 +149,7 @@ p.progress-level {
   .overlay, .overlay2 {
       top: 170px;
   }
+  
 
   /*----RESEARCH SECTION----*/
   img.research-icon {
@@ -267,13 +268,13 @@ p.progress-level {
   }
 
   .overlay, .overlay2 {
-      top: 80px;
+      top: 35px;
       width: 280px;
       height: 280px;
   }
 
   .overlay2 {
-      top: 70px;
+      top: 35px;
   }
 
   /*----CONTACT, FOOTER. PORTFOLIO.SKILLS AND ABOUT SECTION----*/
@@ -300,6 +301,12 @@ p.progress-level {
   i.facebook {
     font-size: 26px;
   }
+}
+
+@media (min-width: 1200px) {
+    .overlay, .overlay2 {
+        top: 95px;
+    }
 }
 
 @media (min-width: 1260px) {
