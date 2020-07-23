@@ -21,6 +21,8 @@ $(document).ready(function () {
             $(document).on("scroll", onScroll);
         });
     });
+
+    
 });
 
 function onScroll(event){
