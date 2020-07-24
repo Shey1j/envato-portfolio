@@ -76,6 +76,10 @@ p.progress-level {
 }
 
 /*----PORTFOLIO SECTION----*/
+#portfolio {
+    margin-top: -40px;
+}
+
 .overlay {
     width: 80%;
     height: 70%;
@@ -216,6 +220,10 @@ p.progress-level {
   }
 
   /*----PORTFOLIO SECTION----*/
+  #portfolio {
+    margin-top: -70px;
+  }
+  
   #portfolio .modal-content {
     width: 500px;
     height: 500px;
