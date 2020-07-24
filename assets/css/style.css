@@ -11,7 +11,7 @@
 
 a {
   text-decoration: none;
-  color: #232433;
+  color: #232433 !important;
 }
 
 h4 {
@@ -38,10 +38,6 @@ button {
 }
 
 /*----NAVBAR----*/
-a.nav-link:hover {
-  color: #e07a5f !important;
-}
-
 a.nav-link.active {
   color: #e07a5f !important;
 }
@@ -76,7 +72,7 @@ p.progress-level {
 }
 
 /*----PORTFOLIO SECTION----*/
-#portfolio {
+.portfolio {
     margin-top: -40px;
 }
 
@@ -126,7 +122,7 @@ p.progress-level {
   }
 
   /*----PORTFOLIO SECTION----*/
-  #portfolio .modal-content {
+  .portfolio .modal-content {
     width: 500px;
     height: 500px;
   }
@@ -220,11 +216,11 @@ p.progress-level {
   }
 
   /*----PORTFOLIO SECTION----*/
-  #portfolio {
+  .portfolio {
     margin-top: -70px;
   }
   
-  #portfolio .modal-content {
+  .portfolio .modal-content {
     width: 500px;
     height: 500px;
   }
