@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Design Portfolio</title>
   </head>
-  <body>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
     <nav
       class="navbar position-fixed sticky-top navbar-expand-lg py-0 px-md-5 w-100"
       style="background: #f9f8f8; z-index: 99;"
@@ -1024,7 +1024,7 @@
             role="dialog"
             aria-hidden="true"
           >
-            <div class="modal-dialog">
+            <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
                 <div class="modal-body">
                   <div
@@ -1032,6 +1032,14 @@
                     data-ride="carousel"
                     id="carouselModal"
                   >
+                  <ol class="carousel-indicators">
+                    <li data-target="#carouselModal" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselModal" data-slide-to="1"></li>
+                    <li data-target="#carouselModal" data-slide-to="2"></li>
+                    <li data-target="#carouselModal" data-slide-to="3"></li>
+                    <li data-target="#carouselModal" data-slide-to=""></li>
+                    <li data-target="#carouselModal" data-slide-to="4"></li>
+                  </ol>
                     <div class="carousel-inner">
                       <div class="carousel-item active">
                         <img
@@ -1076,6 +1084,14 @@
                         />
                       </div>
                     </div>
+                    <a class="carousel-control-prev" href="#carouselModal" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#carouselModal" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
                   </div>
                 </div>
               </div>
@@ -1292,7 +1308,6 @@
       window.addEventListener("load", AOS.refresh);
     </script>
     <!-- Optional JavaScript -->
-    <script src="assets/js/libs/waypoints.js"></script>
     <script src="./assets/js/custom.js"></script>
   </body>
 </html>
