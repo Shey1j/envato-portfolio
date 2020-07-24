@@ -72,7 +72,7 @@ p.progress-level {
 }
 
 /*----PORTFOLIO SECTION----*/
-.portfolio {
+#portfolio {
     margin-top: -40px;
 }
 
@@ -122,7 +122,7 @@ p.progress-level {
   }
 
   /*----PORTFOLIO SECTION----*/
-  .portfolio .modal-content {
+  #portfolio .modal-content {
     width: 500px;
     height: 500px;
   }
@@ -216,11 +216,11 @@ p.progress-level {
   }
 
   /*----PORTFOLIO SECTION----*/
-  .portfolio {
+  #portfolio {
     margin-top: -70px;
   }
   
-  .portfolio .modal-content {
+  #portfolio .modal-content {
     width: 500px;
     height: 500px;
   }
