@@ -178,13 +178,6 @@ p.progress-level {
     line-height: 32px;
   }
 
-  #home-card {
-    height: 240px;
-}
-#home-card .card {
-    height: 192px;
-}
-
   /*----SKILLS SECTION----*/
   p.info {
     font-size: 18px;
