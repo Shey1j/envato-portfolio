@@ -37,6 +37,14 @@ button {
   line-height: 15px;
 }
 
+button:active {
+    transform: translateX(4px);
+}
+
+button:focus {
+    outline: none;
+}
+
 /*----NAVBAR----*/
 a.nav-link:hover {
   color: #e07a5f !important;
@@ -135,12 +143,6 @@ p.progress-level {
       margin-top: -70px;
   }
 
-  #portfolio .modal-content {
-    width: 500px;
-    height: 500px;
-  }
-  
-
   /*----RESEARCH SECTION----*/
   img.research-icon {
     width: 30px;
@@ -225,12 +227,6 @@ p.progress-level {
   p.about-info {
     padding-left: 4rem !important;
     padding-right: 4rem !important;
-  }
-
-  /*----PORTFOLIO SECTION----*/
-  #portfolio .modal-content {
-    width: 500px;
-    height: 500px;
   }
 
   /*----CONTACT, FOOTER. PORTFOLIO.SKILLS AND ABOUT SECTION----*/
