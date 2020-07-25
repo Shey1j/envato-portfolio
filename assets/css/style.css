@@ -35,6 +35,15 @@ p {
 button {
   font-size: 12px;
   line-height: 15px;
+  cursor: pointer;
+}
+
+button:active {
+    transform: translateX(4px);
+}
+
+button:focus {
+    outline: none;
 }
 
 /*----NAVBAR----*/
@@ -121,11 +130,6 @@ p.progress-level {
     height: 32px;
   }
 
-  /*----PORTFOLIO SECTION----*/
-  #portfolio .modal-content {
-    width: 500px;
-    height: 500px;
-  }
   
 
   /*----RESEARCH SECTION----*/
@@ -220,10 +224,6 @@ p.progress-level {
     margin-top: -70px;
   }
   
-  #portfolio .modal-content {
-    width: 500px;
-    height: 500px;
-  }
 
   /*----CONTACT, FOOTER. PORTFOLIO.SKILLS AND ABOUT SECTION----*/
   h4.contact-page,
